@@ -1,0 +1,52 @@
+/*
+  You can use import statements to include partials:
+ */
+@import 'imports/reset.css';
+
+/*
+  Or add your statements here:
+ */
+body {
+  font-size: calc(10px + 1vmin);
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #282c34 !important;
+  color: white;
+}
+
+a {
+  color: pink;
+  text-decoration: none;
+}
+
+h1, h3 {
+    color: #FFF;
+}
+
+h1 {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 767.98px) { 
+    h1 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}
+
+
+.content {
+  padding: 0 32px;
+}
+
