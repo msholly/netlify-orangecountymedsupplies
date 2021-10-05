@@ -8,7 +8,7 @@
 
 <div class="card text-white bg-dark p-2 p-sm-5 mt-4">
     <div class="card-body">
-        <form name="contact" method="POST" class="row" data-netlify="true">
+        <form name="contact" method="POST" class="row" data-netlify="true" data-netlify-recaptcha="true">
             <div class="col-md-6">
                 <input type="text" id="name" name="name" placeholder="Full Name" class="form-control mb-4">
             </div>
@@ -20,6 +20,8 @@
                     placeholder="Type Message Here"></textarea>
             </div>
             <div class="col-lg-6 col-10 mx-auto">
+                <div data-netlify-recaptcha="true" class="mb-3"></div>
+
                 <button type="submit" class="btn btn-success w-100">SEND</button>
             </div>
         </form>
